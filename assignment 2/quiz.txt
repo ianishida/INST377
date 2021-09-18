@@ -1,0 +1,69 @@
+1. No, ordered lists can only be nested within other ordered lists. Unordered lists can only be nested within other unordered lists.
+
+2. It is not possible to nest an unordered list within an ordered list or vice versa.
+
+3. Unordered lists can be customized with the list-style-type, changing bullet type. Ordered lists can be customized to start with a different number - other than 1 - using the start="x" attribute. Additionally, ordered lists can utilize the list-style-type property to change the numbering style, to use Roman numerals for example.
+
+4. The <table> tag creates a table, the table row <tr> tag identifies the start of a new row - within which the table header <th> identifies the column headers. Table data is identified with the <td> tag, which is used within the table rows <tr> to populate the table with data.
+
+5. The rowspan="x" or colspan="x" attributes can be used to create cells that span more than one column or row.
+
+6. 
+
+<html>
+
+<table>
+
+	<tr>
+	<th>Column 1</th>
+	<th>Column 2</th>
+	<th>Column 3</th>
+	<th>Column 4</th>
+	<th>Column 5</th>
+	</tr>
+	
+	<tr>
+	<td>Row 1</td>
+	<td>Row 1</td>
+	<td>Row 1</td>
+	<td>Row 1</td>
+	<td>Row 1</td>
+	</tr>
+	
+	<tr>
+	<td>Row 2</td>
+	<td>Row 2</td>
+	<td>Row 2</td>
+	<td>Row 2</td>
+	<td>Row 2</td>
+	</tr>
+
+	<tr>
+	<td>Row 3</td>
+	<td>Row 3</td>
+	<td>Row 3</td>
+	<td>
+
+		<table>
+    		<tr><td>nest 1</td><td>nest2</td></tr>
+    		<tr><td>nest 1</td><td>nest2</td></tr>
+		<tr><td>nest 1</td><td>nest2</td></tr>
+    		</table>
+
+	</td>
+	<td>Row 3</td>
+	</tr>
+	
+	<tr>
+	<td>Row 4</td>
+	<td>Row 4</td>
+	<td>Row 4</td>
+	<td>Row 4</td>
+	<td>Row 4</td>
+	</tr>
+
+</table>
+
+</html>
+
+7. The border styling attribute can create a double border around your table with a specified pixel width. The border-collapse attributes creates a single-line border. The background-color attributes lets the user specify a background color for the table. The padding and spacing attributes can let you affect the space between cells as well as the space between edges of cells and cell data. 
